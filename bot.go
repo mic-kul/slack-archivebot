@@ -26,10 +26,10 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(2)
 
-	go func(c []slack.Channel) {
-		defer wg.Done()
-		archiveEmptyChannels(api, c)
-	}(channels)
+	// go func(c []slack.Channel) {
+	// 	defer wg.Done()
+	// 	archiveEmptyChannels(api, c)
+	// }(channels)
 
 	go func(c []slack.Channel) {
 		defer wg.Done()
@@ -39,10 +39,10 @@ func main() {
 	wg.Wait()
 }
 
-func archiveEmptyChannels(api *slack.Slack, c []slack.Channel) {
-	empty := filterEmptyChannels(api, c)
-	archiveChannels(api, empty, "emptiness")
-}
+// func archiveEmptyChannels(api *slack.Slack, c []slack.Channel) {
+// 	empty := filterEmptyChannels(api, c)
+// 	archiveChannels(api, empty, "emptiness")
+// }
 
 func archiveInactiveChannels(api *slack.Slack, c []slack.Channel) {
 	inactive := filterInactiveChannels(api, c)

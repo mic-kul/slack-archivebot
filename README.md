@@ -3,7 +3,7 @@
 A simple Go app that will automatically archive public channels on the
 following criteria:
 
-* if the channel is empty; or
+* ~if the channel is empty; or~
 * if the channel has had no activity for the last X days.
 
 ## Use
