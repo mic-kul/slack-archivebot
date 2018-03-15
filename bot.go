@@ -114,7 +114,7 @@ func filterInactiveChannels(api *slack.Slack, c []slack.Channel) []slack.Channel
 
 	for i := 0; i < len(c); i++ {
 		lcm := <-res
-		if lcm.Timestamp > 0 && lcm.Timestamp < timeout {
+		if lcm.Timestamp > 0 && lcm.Timestamp < timeout && strings.HasPrefix(lcm.Channel.Name, "z-") {
 			channels = append(channels, lcm.Channel)
 		}
 	}
