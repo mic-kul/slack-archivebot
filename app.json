@@ -1,7 +1,7 @@
 {
   "name": "slack-archivebot",
   "description": "Automatically archive empty and inactive public channels.",
-  "repository": "https://github.com/timblair/slack-archivebot",
+  "repository": "https://github.com/mic-kul/slack-archivebot",
   "logo": "https://babeljs.io/images/users/slack.svg",
   "success_url": "/welcome",
   "env": {
