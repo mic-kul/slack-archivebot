@@ -55,4 +55,4 @@ available](http://github.com/timblair/slack-archivebot).
 slack-archivebot was developed by [Tim Blair](http://tim.bla.ir/) during a
 [Venntro](http://venntro.com/) hack day.
 
-[herokudeploy]: https://heroku.com/deploy?template=https://github.com/timblair/slack-archivebot
+[herokudeploy]: https://heroku.com/deploy?template=https://github.com/mic-kul/slack-archivebot
